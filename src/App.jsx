@@ -4,6 +4,7 @@ import Location from "./components/Location";
 import { useState } from "react";
 import ResidentList from "./components/ResidentList";
 import useGetData from "./customHooks/useGetData";
+import CountPoblation from "./components/CountPoblation";
 
 function App() {
   const [search, setSearch] = useState("");
@@ -23,6 +24,7 @@ function App() {
         </button>
       </div>
       <Location location={location} />
+      <CountPoblation location={location}/>
       <ResidentList location={location} />
       <useGetData search={search} />
     </div>
