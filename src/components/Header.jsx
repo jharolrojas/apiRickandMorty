@@ -4,11 +4,15 @@ import nameRickandMorty from "../img/Rick-and-Morty.png";
 
 const Header = () => {
   return (
-    <header>
-      <img className="imgBackground" src={imgBackground} alt="" />
-      <div  className="nameRickandMorty" >
-        <img src={nameRickandMorty} alt="" />
-        </div>
+    <header className="header">
+      <img
+        className="imgBackground"
+        src={imgBackground}
+        alt="image the Rick and Morty"
+      />
+      <div className="nameRickandMorty">
+        <img src={nameRickandMorty} alt="Rick and Morty" />
+      </div>
     </header>
   );
 };

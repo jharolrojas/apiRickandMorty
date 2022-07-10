@@ -1,9 +1,6 @@
 import React from "react";
 
-
-
-const Location = ({location}) => {
- 
+const Location = ({ location }) => {
   return (
     <div className="containerLocation">
       <div className="infoLocation">

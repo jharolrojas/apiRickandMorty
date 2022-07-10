@@ -7,20 +7,23 @@
 .App {
   width: 100%;
   height: 100vh;
+
   background-color: #0d3213;
-  font-family: 'Nanum Pen Script', cursive;
 
+  font-family: "Nanum Pen Script", cursive;
 
- font-size: 1.5rem;
+  font-size: 1.5rem;
 }
-h4{text-align: center
-;
-font-size: 2rem;}
+
+.h4 {
+  text-align: center;
+  font-size: 2rem;
+}
 
 /* Header */
-header {
+.header {
   width: 100%;
-  margin-bottom:10px ;
+  margin-bottom: 10px;
 }
 .imgBackground {
   height: 200px;
@@ -41,34 +44,41 @@ header {
 /* input */
 .containerInputId {
   width: 100%;
+
   padding: 20px;
-  position: absolute;
   top: 22%;
+
+  position: absolute;
+
   display: flex;
   justify-content: center;
 }
 .inputId {
   width: 400px;
   height: 30px;
-}
-input {
+
   text-decoration: none;
   border: none;
 }
+
 input:focus {
   outline: none;
 }
 .button {
   width: 50px;
+
   border: none;
+
   background: linear-gradient(to bottom, #0e843f, #e7fb9a);
 }
 
 /* Location */
 .containerLocation {
   width: 100%;
+
   display: flex;
   justify-content: center;
+
   background: -webkit-linear-gradient(#e7fb9a, #0e843f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -77,14 +87,18 @@ input:focus {
   width: 80%;
   max-width: 1000px;
   height: 150px;
+
+  padding: 10px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+ 
 }
 .descriptionLocation {
   width: 100%;
+
   display: flex;
   justify-content: space-evenly;
 }
@@ -98,61 +112,72 @@ input:focus {
 
 .ResidentList {
   width: 100%;
-  display: flex;
-
-  justify-content: center;
-  flex-wrap: wrap;
 
   padding: 10px;
   margin: 10px 0;
-  /* background: linear-gradient(to bottom, #0e843f, #85ba11); */
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
   background-color: #0d3213;
 }
 .containerCard {
   width: 250px;
   height: 400px;
 
-  /* background-color: #E7FB9A; */
+  margin: 20px;
+
   background: linear-gradient(to bottom, #e7fb9a, #0e843f);
+
   box-shadow: 10px 10px 10px #e7fb9a;
+
   position: relative;
 
-  margin: 20px;
   border-radius: 10px;
 }
 .containerImg {
   width: 250px;
   padding: 0 10px;
+
+  position: relative;
 }
 .containerImg img {
   width: 100%;
+
   border-radius: 100%;
-  /* box-shadow: 10px 10px 10px red; */
 }
-.containerDescriptionPerson,h4 {
+.containerDescriptionPerson,
+.h4 {
   background: -webkit-linear-gradient(black, #0e843f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  
-  
 }
 .statusCaracter {
+  min-width: 50px;
+
+  left: 10px;
+  top: 20px;
+
   position: absolute;
   z-index: 99;
-  left: 10px;
-  top: 50px;
+
+  font-size: 1rem;
+
   background-color: rgba(128, 128, 128, 0.442);
-  min-width: 50px;
+  
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1rem;
 }
 .circleStatus {
-  border-radius: 100%;
   width: 7px;
   height: 7px;
+
   margin: 5px;
+
+  border-radius: 100%;
+  
 }
 .containerDescriptionPerson {
   display: flex;
@@ -164,15 +189,15 @@ input:focus {
   display: flex;
 }
 .DescriptionSpecific {
+  width: 65px;
+  margin: 10px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 65px;
-  margin: 10px;
+  
 }
-i {
+.icon {
   font-size: 1.3rem;
 }
-p {
-  margin: 5px;
-}
+
