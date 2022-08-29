@@ -18,6 +18,7 @@ function App() {
           className="inputId"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
+          onKeyUp={() => inputId(search)}
         />
         <button onClick={() => inputId(search)} className="button">
           <i className="fas fa-search-location icon"></i>

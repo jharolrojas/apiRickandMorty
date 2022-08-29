@@ -3,6 +3,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 
 const ResidentInfo = ({ url }) => {
+  console.log(url,"hola")
   const [caracter, setCaracter] = useState({});
   useEffect(() => {
     axios
@@ -12,6 +13,7 @@ const ResidentInfo = ({ url }) => {
   }, []);
 
   return (
+    <div className="containerCardC">
     <article className="containerCard">
       
       <h4 className="h4">{caracter.name}</h4>
@@ -59,6 +61,7 @@ const ResidentInfo = ({ url }) => {
         </div>
       </div>
     </article>
+    </div>
   );
 };
 

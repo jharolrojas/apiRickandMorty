@@ -2,6 +2,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
+  
 }
 body {
   background-color: #0d3213;
@@ -105,9 +107,23 @@ input:focus {
 
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
   flex-wrap: wrap;
 
   background-color: #0d3213;
+
+
+}
+.childResidentList{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.containerCardC{
+  min-width: 280px;
+  min-height: 420px;
 }
 .containerCard {
   width: 250px;
@@ -131,6 +147,7 @@ input:focus {
 .containerCard:hover {
   width: 280px;
   height: 420px;
+  margin: 0px;
 
   transition-property: left, top, height, width;
   transition-duration: 0.3s;
@@ -207,7 +224,38 @@ input:focus {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+/* pagination */
+.pagination {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 
+  padding: 20px;
+}
+.burronPagination {
+  padding: 10px;
+  height: 35px;
+  background-color: #81df03;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.63);
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 1px;
+}
+.buttonNumbersPagination {
+  padding: 10px;
+  height: 35px;
+  background-color: #81df03;
+  border: none;
+
+  border-radius: 5px;
+  margin: 1px;
+  font-weight: bold;
+}
+a{
+  text-decoration: none;
+  color:#FFF;
+}
 /* ------------------------------------------------------------------------------- */
 
 @media (min-width: 500px) {
