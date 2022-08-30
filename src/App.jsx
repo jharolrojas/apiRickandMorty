@@ -19,7 +19,7 @@ function App() {
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           onKeyUp={() => inputId(search)}
-          placeholder="write a number between 1 and 125"
+          placeholder=" Write a number between 1 and 125"
         />
         <button onClick={() => inputId(search)} className="button">
           <i className="fas fa-search-location icon"></i>
